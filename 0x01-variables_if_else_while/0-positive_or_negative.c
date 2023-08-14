@@ -7,7 +7,7 @@
  *
  * Description: FALSE OR TRUE VALIDATION
  *
- * Retrun : 0 success
+ * Retrun: 0 (success)
 */
 
 int main(void)
