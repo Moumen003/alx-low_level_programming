@@ -5,9 +5,9 @@
 /**
  * main - entry point
  *
- * Description: FALSE OR TRUE VALIDATION
+ * Description: false or true validation
  *
- * Retrun: 0 (success)
+ * Return: 0 (success)
 */
 
 int main(void)
