@@ -11,7 +11,11 @@ for (i = 0; i < 10; i++)
 {
 	for (x = 0; x < 10; x++)
 	{
-		if (x != 0)
+		if (x != 0 && i * x <= 9 )
+		{
+			_putchar('  ');
+		}
+		else if (x != 0)
 		{
 			_putchar(' ');
 		}
