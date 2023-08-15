@@ -18,6 +18,6 @@ else
 {
 lg = ((n % 10) * -1);
 }
-_putchar('lg');
+_putchar(lg);
 return (lg);
 }
