@@ -15,14 +15,15 @@ for (h = 0; h <= 23; h++)
 	}
 	for (m = 0; m <= 59; m++)
 	{
-		_putchar(h);
+		_putchar(h + '0');
 		_putchar(':');
 		if (m <= 9)
 		{
 			_putchar('0');
 		}
-		_putchar(m);;
+		_putchar(m + '0');
+		_putchar('\n');
 	}
-	_putchar('\n');
+	
 }
 }
