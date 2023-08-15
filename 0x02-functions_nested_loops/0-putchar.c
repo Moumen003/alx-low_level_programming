@@ -11,9 +11,10 @@
 
 int main(void)
 {
-char a[0] = '_', a[1] = 'p', a[2] = 'u';
-char a[3] = 't', a[4] = 'c', a[5] = 'h';
-char a[6] = 'a', a[7] = 'r';
+char a[7];
+a[0] = '_'; a[1] = 'p'; a[2] = 'u';
+a[3] = 't'; a[4] = 'c'; a[5] = 'h';
+a[6] = 'a'; a[7] = 'r';
 int i = 0;
 while (a[i] != 0)
 {
