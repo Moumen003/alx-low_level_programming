@@ -13,7 +13,7 @@ for (i = 0; i < 10; i++)
 	{
 		if (x != 0 && i * x <= 9 )
 		{
-			_putchar('  ');
+			_putchar(' '); _putchar(' ');
 		}
 		else if (x != 0)
 		{
