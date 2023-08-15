@@ -1,12 +1,18 @@
-#include "main.h"
+"include main.h"
 
 /**
- * main - check the code
+ * print_alphabet - write
  *
- * Return: Always 0.
- */
-int main(void)
+ * Return: 0 (success)
+*/
+
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+int ch = 'a';
+while (ch <= 'z')
+{
+_putchar(ch);
+ch++;
+}
+_putchar('\0');
 }
