@@ -21,8 +21,8 @@ for (h = 0; h <= 23; h++)
 		{
 			_putchar('0');
 		}
-		_putchar(m);
-		_putchar('\n');
+		_putchar(m);;
 	}
+	_putchar('\n');
 }
 }
