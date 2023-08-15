@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10: use
+ * print_alphabet_x10: use bs ba2a yabny
+ *
 */
 
 void print_alphabet_x10(void)
