@@ -1,13 +1,24 @@
 #include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main - entry point
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
+ * Description: bs keda
+ *
+ * Return: 0 (success)
+*/
+
+int main(void)
 {
-	return (write(1, &c, 1));
+char a[0] = '_', a[1] = 'p', a[2] = 'u';
+char a[3] = 't', a[4] = 'c', a[5] = 'h';
+char a[6] = 'a', a[7] = 'r';
+int i = 0;
+while (a[i] != 0)
+{
+_putchar(a[i]);
+i++;
+}
+return (0);
 }
