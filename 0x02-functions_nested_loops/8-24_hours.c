@@ -11,19 +11,12 @@ for (h = 0; h <= 23; h++)
 {
 	for (m = 0; m <= 59; m++)
 	{
-		if (h <= 9)
-        {
-                _putchar('0');
-        }
-
-		_putchar(h + '0');
+		_putchar(h / 10 + 48);
+		_putchar(h % 10 + 48);
 		_putchar(':');
-		if (m <= 9)
-		{
-			_putchar('0');
-		}
-		_putchar(m + '0');
+		_putchar(m / 10 + 48);
+		_putchar(m % 10 + 48);
 		_putchar('\n');
-	}	
+	}
 }
 }
