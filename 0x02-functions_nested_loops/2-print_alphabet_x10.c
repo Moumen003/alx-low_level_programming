@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10: use bs ba2a yabny
- *
+ * print_alphabet_x10 - utilizes on the _putchar function to print
 */
 
 void print_alphabet_x10(void)
