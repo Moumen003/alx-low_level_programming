@@ -10,7 +10,7 @@ int i;
 int ch;
 for (i = 0; i < 10; i++)
 {
-ch = 'a'
+ch = 'a';
 while (ch <= 'z')
 {
 _putchar(ch);
