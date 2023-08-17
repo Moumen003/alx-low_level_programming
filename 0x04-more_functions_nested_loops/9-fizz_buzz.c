@@ -27,9 +27,9 @@ for (i = 1; i <= 100; i++)
 		case 1:
 			printf(" Fizz");
 		case 2:
-			printf("Buzz");
+			printf(" Buzz");
 		case 3:
-			printf("FizzBuzz");
+			printf(" FizzBuzz");
 		default:
 			printf(" %d", i);
 	}
