@@ -17,22 +17,21 @@ for (i = 2; i <= 100; i++)
 {
 	j = 0;
 	if (i % 3 == 0)
-		j = 1;
-	if (i % 5 == 0)
-		j = 2;
-	if ((i % 5 == 0) && (i % 3 == 0))
-		j = 3;
-	switch(j)
 	{
-		case 1:
-			printf(" Fizz");
-		case 2:
-			printf(" Buzz");
-		case 3:
+		if (i % 5 == 0)
 			printf(" FizzBuzz");
-		default:
-			printf(" %d", i);
+		else
+			printf(" Fizz");
 	}
+	if (i % 5 == 0)
+	{
+		if (i % 3 == 0)
+			printf(" FizzBuzz");
+		else
+			printf(" Buzz");
+	}
+	else
+		printf(" %d", i);
 }
 putchar('\n');
 }
