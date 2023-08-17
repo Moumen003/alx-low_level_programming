@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - fn name
- */
+*/
 
 void print_most_numbers(void)
 {
@@ -13,7 +13,10 @@ void print_most_numbers(void)
 		if (i != '2')
 		{
 			if (i != '4')
+			{
 				_putchar(i);
+			}
 		}
 	}
+	_putchar('\n');
 }
