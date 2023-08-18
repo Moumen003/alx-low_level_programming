@@ -33,5 +33,5 @@ for (i = 2; i <= 100; i++)
 		printf(" %d", i);
 }
 putchar('\n');
+return (0);
 }
-
