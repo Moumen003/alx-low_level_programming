@@ -15,6 +15,8 @@ int main(void)
 	char m;
 
 	srand(time(NULL));
-	m = rand();
+
+	m = rand() % 126;
+
 	return (0);
 }
