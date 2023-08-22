@@ -4,8 +4,8 @@
  * _strlen - function name
  * @s: input
  *
- * Return : output of type int
- */
+ * Return : i lenght  output of type int
+*/
 
 int _strlen(char *s)
 {
