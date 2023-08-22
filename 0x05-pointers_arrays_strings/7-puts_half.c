@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** puts_half - fn name
+/** 
+ * puts_half - fn name
  * @str: bs ya input
  */
 
