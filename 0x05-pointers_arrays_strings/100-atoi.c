@@ -9,18 +9,17 @@
 
 int _atoi(char *s)
 {
+	int numbers = 0;
+	int negative = 1;
 
-    int numbers;
-    int negative = 1;
-
-   do {
-	   if (*s == '-')
-		   negative *= -1;
-	   else if (*s >= '0' && *s <= '9')
-		   numbers = numbers * 10 + (*s - '0');
-	   else if (numbers > 0)
-		   break;
-   }
-   while (*s++);
-   return (numbers * negative);
+	do {
+		if (*s == '-')
+			negative *= -1;
+		else if (*s >= '0' && *s <= '9')
+			numbers = numbers * 10 + (*s - '0');
+		else if (numbers > 0)
+			break;
+	}
+	while (*s++);
+	return (numbers * negative);
 }
