@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /**
  * keygen - file name
@@ -12,7 +13,9 @@
 int main(void)
 {
 	srand(time(NULL));
-	int m = rand();
+	int m;
+
+	m = rand();
 
 	printf("Tada! Congrats\n");
 	return (m);
