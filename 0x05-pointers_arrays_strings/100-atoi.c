@@ -3,27 +3,24 @@
 /**
  * _atoi - fn name
  * @s: pointer to char
+ *
+ * Return: success if rkm
  */
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int numbers = 0;
-	int negative = 0;
-	int final;
 
-	while (s[i])
-	{
-		if (s[i] == '-')
-			negative++;
-		else if (s[i] >= '0' && s[i] <= '9')
-			numbers = numbers * 10 + (s[i] - '0');
-		else if (numbers > 0)
-			break;
-	}
-	if (negative % 2 == 0)
-		final = numbers;
-	else
-		final = numbers * -1;
-	return (final);
+    int numbers;
+    int negative = 1;
+
+   do {
+	   if (*s == '-')
+		   negative *= -1;
+	   else if (*s >= '0' && *s <= '9')
+		   numbers = numbers * 10 + (*s - '0');
+	   else if (numbers > 0)
+		   break;
+   }
+   while (*s++);
+   return (numbers * negative);
 }
