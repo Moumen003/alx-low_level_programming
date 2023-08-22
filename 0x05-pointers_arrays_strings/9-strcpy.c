@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * *_strcpy - ptr to function
  * @dest: da awelhom
  * @src: we da el tany
