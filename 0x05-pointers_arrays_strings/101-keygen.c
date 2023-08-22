@@ -12,11 +12,17 @@
 
 int main(void)
 {
+	int sum;
 	char m;
 
 	srand(time(NULL));
 
-	m = rand() % 126;
-
+	while (sum <= 2550)
+	{
+		m = rand() % 126;
+		sum += m;
+		putchar(m);
+	}
+	putchar(2800 - sum);
 	return (0);
 }
