@@ -18,7 +18,7 @@ int _atoi(char *s)
 			negative++;
 		else if (s[i] >= '0' && s[i] <= '9')
 			numbers = numbers * 10 + (s[i] - '0');
-		else if (numers > 0)
+		else if (numbers > 0)
 			break;
 	}
 	if (negative % 2 == 0)
