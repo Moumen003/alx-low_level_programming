@@ -16,7 +16,6 @@ int main(void)
 	char m;
 
 	srand(time(NULL));
-
 	while (sum <= 2645)
 	{
 		m = rand() % 126;
