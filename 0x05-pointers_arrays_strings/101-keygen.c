@@ -17,6 +17,5 @@ int main(void)
 	srand(time(NULL));
 	m = rand();
 
-	printf("Tada! Congrats\n");
-	return (m);
+	return (0);
 }
