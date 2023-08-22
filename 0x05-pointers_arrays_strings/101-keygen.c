@@ -12,9 +12,9 @@
 
 int main(void)
 {
-	srand(time(NULL));
 	int m;
 
+	srand(time(NULL));
 	m = rand();
 
 	printf("Tada! Congrats\n");
