@@ -16,6 +16,5 @@ int main(void)
 
 	srand(time(NULL));
 	m = rand();
-
 	return (0);
 }
