@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strcpy - function name
- * @dest: first
- * @src: second
- * @n: third
+ * _strncat - function name conventates
  *
- * Return: the char output
+ * @dest: first pointer
+ * @src: second
+ * @n: third most
+ *
+ * Return: @dest
  */
 
 char *_strncat(char *dest, char *src, int n)
