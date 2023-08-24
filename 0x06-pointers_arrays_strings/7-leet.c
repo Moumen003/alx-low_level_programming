@@ -16,13 +16,13 @@ char *leet(char *c)
 	while (*c)
 	{
 		for (i = 0; i < sizeof(k) / sizeof(char); i++)
+		{
 			if (*c == k[i] || *c == k[i] + 32)
 			{
 				*c = 48 + v[i];
 			}
+		}
+		c++;
 	}
-	c++;
-}
-
-return (mou);
+	return (mou);
 }
