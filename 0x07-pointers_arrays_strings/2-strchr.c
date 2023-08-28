@@ -13,15 +13,13 @@ char *_strchr(char *s, char c)
 int i = 0;
 char *found = NULL;
 
-while (s[i])
+for (i = 0; s[i] >= '\0'; i++)
 {
 	if (s[i] == c)
 	{
 		found = s + i;
 		break;
 	}
-	else
-		i++;
 }
 return (found);
 }
