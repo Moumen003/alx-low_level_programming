@@ -17,6 +17,11 @@ char *c;
 
 c = NULL;
 p = 0;
+
+if (*needle == 0)
+	c = haystack;
+else
+{
 for (i = 0; haystack[i] != '\0'; i++)
 {
 	j = 0;
@@ -32,6 +37,7 @@ for (i = 0; haystack[i] != '\0'; i++)
 		c = haystack + i - j;
 		break;
 	}
+}
 }
 return (c);
 }
