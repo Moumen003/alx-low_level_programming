@@ -22,7 +22,7 @@ for (i = 0; haystack[i] != '\0'; i++)
 	j = 0;
 	while (haystack[i] == needle[j])
 	{
-		if (needle[j] == '\0')
+		if (needle[j] + 1 == '\0')
 			break;
 		p = 1;
 		j++;
