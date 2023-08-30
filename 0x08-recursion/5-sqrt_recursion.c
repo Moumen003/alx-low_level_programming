@@ -28,7 +28,7 @@ int s(int n, int val)
 	if (val * val == n)
 		return (n);
 	else if (val * val < n)
-		return (square(n, val + 1));
+		return (s(n, val + 1));
 	else
 		return (-1);
 }
