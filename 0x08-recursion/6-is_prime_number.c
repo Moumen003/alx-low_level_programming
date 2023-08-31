@@ -20,7 +20,7 @@ int is_prime_number(int n)
  * Return: shoof el feha
  */
 
-int cp(int n, o)
+int cp(int n, int o)
 {
 	if (o >= n && n > 1)
 		return (1);
