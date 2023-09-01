@@ -9,16 +9,16 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc > 2 || argc < 2)
-		return (printf("Error\n"), 1);
-	else
+	if (argc == 2)
 	{
 		int i;
 		int lc;
- 		int m;
-		
+		int m;
+
 		int c[] = {25, 10, 5, 2, 1};
+
 		lc = 0;
+
 		m = atoi(argv[1]);
 
 		for (i = 0; i < 5; i++)
@@ -34,4 +34,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", lc);
 		return (0);
 	}
+	else
+		return (printf("Error\n"), 1);
 }
