@@ -10,42 +10,16 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
-	else
-	{
-		int i;
-		int f;
-		int n;
-		int sum;
-		char *c;
+	int sum = 0;
+	char *c;
 
-		c = argv[argc];
-		f = 0;
-		for (i = 1; i < argc; i++)
-		{
-			if (c[i] > '9' || c[i] < '0')
-			{
-				printf("Error\n");
-				f = 1;
-				n = 1;
-				break;
-			}
-		}
-		sum = 0;
-		while (f == 0)
-		{
-			for (i = 1; i < argc; i++)
-			{
-				sum += atoi(argv[i]);
-			}
-			printf("%d", sum);
-			n = 0;
-			f = 1;
-		}
-		return (n);
+	while (--argc)
+	{
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 	}
+	printf("%d\n", sum);
+	return (0);
 }
