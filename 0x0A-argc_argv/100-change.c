@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc != 2)
+	if (argc > 2 || argc < 2)
 		return (printf("Error\n"), 1);
 	else
 	{
@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 					break;
 			}
 		}
+		printf("%d\n", lc);
 		return (0);
 	}
 }
