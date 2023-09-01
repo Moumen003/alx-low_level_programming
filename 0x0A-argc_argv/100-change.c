@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 		for (i = 0; i < 5; i++)
 		{
-			if (m > c[i])
+			if (m >= c[i])
 			{
 				lc += m / c[i];
 				m = m % c[i];
