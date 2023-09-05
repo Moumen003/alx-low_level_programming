@@ -12,7 +12,7 @@ char *_strdup(char *str)
 
 	if (ptr == 0 || str == 0)
 		return (NULL);
-	long unsigned int get;
+	unsigned long int get;
 
 	for (get = 0; get < sizeof(str); get++)
 		ptr[get] = str[get];
