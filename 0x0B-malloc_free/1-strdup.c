@@ -12,9 +12,9 @@ char *_strdup(char *str)
 
 	if (ptr == 0 || str == 0)
 		return (NULL);
-	int i;
+	long unsigned int get;
 
-	for (i = 0; i < sizeof(str); i++)
-		ptr[i] = str[i];
+	for (get = 0; get < sizeof(str); get++)
+		ptr[get] = str[get];
 	return (ptr);
 }
