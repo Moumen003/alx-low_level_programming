@@ -15,9 +15,9 @@ int size1, size2, size, i;
 char *ptr;
 
 if (s1 == NULL)
-	s1 = '\0';
+	s1 = "\0";
 if (s2 == NULL)
-	s2 = '\0';
+	s2 = "\0";
 
 
 for (size1 = 0; s1[size1] != '\0'; size1++)
@@ -40,6 +40,6 @@ for (i = 0; i <= size; i++)
 	else
 		ptr[i] = s2[i - size1];
 }
-ptr[i] = '\0';
+
 return (ptr);
 }
