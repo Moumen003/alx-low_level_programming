@@ -29,7 +29,7 @@ if (ptr == 0)
 
 while (size2--)
 {
-	ptr[size] = s2[size2];
+	ptr[size - 1] = s2[size2];
 	size--;
 }
 while (size1--)
