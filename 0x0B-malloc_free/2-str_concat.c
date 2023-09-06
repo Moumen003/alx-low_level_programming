@@ -34,7 +34,7 @@ while (size2--)
 }
 while (size1--)
 {
-	ptr[size] = s1[size1];
+	ptr[size - 1] = s1[size1];
 	size--;
 }
 
