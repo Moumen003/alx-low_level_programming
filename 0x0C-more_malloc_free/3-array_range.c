@@ -4,7 +4,7 @@
 * array_range - fn name
 * @min: bs
 * @max: yabo
-* Retrun: 3amo
+* Return: 3amo
 */
 
 int *array_range(int min, int max)
