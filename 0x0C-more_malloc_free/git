@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "bs ba2a"
+git push
