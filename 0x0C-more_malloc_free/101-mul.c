@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		_puts("Error");
+		_puts("Error\n");
 		exit(98);
 	}
 
