@@ -61,6 +61,17 @@ int _atoi(char *s)
 }
 
 /**
+* is_digit_char - fn name
+* @c: bs
+* Return: el feha
+*/
+
+int is_digit_char(char c)
+{
+	return (c >= '0' && c <= '9');
+}
+
+/**
 * main - fn name
 * @argc: ma bs
 * @argv: ya negm
@@ -69,24 +80,29 @@ int _atoi(char *s)
 * Return: 98 for fail
 */
 
+
+
 int main(int argc, char *argv[])
 {
+	int i, j;
+
 	if (argc != 3)
 	{
 		_puts("Error");
 		exit(98);
 	}
 
-/*
-*for (argc = 1; argv[argc] < 3; agrc++)
+	for (i = 1; i < argc; i++)
 	{
-		if (argv[argc] < '0' || argv[argc] > '9')
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			exit(98);
+			if (!is_digit_char(argv[i][j]))
+			{
+				_puts("Error\n");
+				exit(98);
+			}
 		}
-	}*
-*/
+	}
 
 	_print(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
