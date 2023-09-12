@@ -4,7 +4,7 @@
 * init_dog - fn namr
 * @d: awel
 * @name: tnay
-* @age: ta;et
+* @age: talet
 * @owner: bs leda
 *
 * Return: void
