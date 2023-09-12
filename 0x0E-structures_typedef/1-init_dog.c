@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
 * init_dog - fn namr
 * @d: awel
