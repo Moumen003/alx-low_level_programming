@@ -14,6 +14,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list boskeda;
+	char *str;
 
 	unsigned int i;
 
@@ -21,11 +22,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if (va_arg(boskeda, char*) == NULL)
+		str = va_arg(boskeda, char*);
+		if (str == NULL)
 			printf("(nil)");
 		else
-			printf("%s", va_arg(boskeda, char*));
-		if (separator != NULL)
+			printf("%s", str);
+		if (separator != NULL && i != (n-1))
 			printf("%s", separator);
 	}
 	printf("\n");
