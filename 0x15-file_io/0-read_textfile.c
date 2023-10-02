@@ -19,8 +19,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename || !letters)
 		return (0);
 
-	bytes = read(fp, , letters);
-	bytes = write(STDOUT_FILENO, , bytes);
+	bytes = read(fp, buf, letters);
+	bytes = write(STDOUT_FILENO, buf, bytes);
 	close(fp);
 	return (bytes);
 }
