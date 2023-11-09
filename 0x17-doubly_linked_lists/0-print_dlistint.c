@@ -1,21 +1,20 @@
 #include "lists.h"
 
 /**
-* print_dlistint - fn name
-* @h: bs ba2a
-*
-* Return: we malo ya gameel
-*/
-
+ * print_dlistint - fn name.
+ * @h: gara eh yad
+ * Return:  mynodenumber .
+ */
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t node = 0;
+	size_t mynodenumber = 0;
 
 	while (h)
 	{
-		node++;
+		mynodenumber++;
 		printf("%d\n", h->n);
 		h = h->next;
 	}
-	return (node);
+
+	return (mynodenumber);
 }
